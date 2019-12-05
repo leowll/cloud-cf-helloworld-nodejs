@@ -3,10 +3,10 @@ steps:
   mtaBuild:
     buildTarget: 'CF'
     
-cloudFoundryDeploy:
-    deployTool: 'mtaDeployPlugin'
-    deployType: 'standard'
-    cloudFoundry:
-      org: 'DBS Japan Shared_dev'
-      space: 'demo'
-      credentialsId: 'CF_CREDENTIALSID'
+  cloudFoundryDeploy:
+      deployTool: 'mtaDeployPlugin'
+      deployType: 'standard'
+      cloudFoundry:
+        org: 'DBS Japan Shared_dev'
+        space: 'demo'
+        credentialsId: 'CF_CREDENTIALSID'
