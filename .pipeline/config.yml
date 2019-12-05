@@ -7,6 +7,7 @@ steps:
       deployTool: 'mtaDeployPlugin'
       deployType: 'standard'
       cloudFoundry:
+        apiEndpoint: https://api.cf.jp10.hana.ondemand.com
         org: 'DBS Japan Shared_dev'
         space: 'demo'
         credentialsId: 'CF_CREDENTIALSID'
