@@ -10,10 +10,10 @@ node() {
 	stage('test') {
         parallel {
             stage("Static Code Checks") {
-		        echo "Static code checks" 
+		        echo 'Static code checks' 
             }
 		    stage("UIVERI5 test") {
-				echo "uiver5 test" 
+				echo 'uiver5 test' 
             }
         }
     }
