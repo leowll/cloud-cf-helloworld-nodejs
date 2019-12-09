@@ -13,7 +13,8 @@ node() {
 		        steps { echo "Static code checks" }
             }
 		    stage("UIVERI5 test"){
-		        steps { uiVeri5ExecuteTests script: this, testOptions: "./uiveri5/conf.js" }
+		        # steps { uiVeri5ExecuteTests script: this, testOptions: "./uiveri5/conf.js" }
+				steps { echo "uiver5 test" }
             }
         }
     }
