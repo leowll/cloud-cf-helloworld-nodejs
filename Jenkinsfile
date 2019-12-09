@@ -10,10 +10,10 @@ node() {
 	stage('test') {
             parallel {
                 stage("Static Code Checks") {
-					echo "Static code checks"
+					steps { echo "Static code checks" }
                 }
 				stage("UIVERI5 test"){
-					uiVeri5ExecuteTests script: this, testOptions: "./uiveri5/conf.js"
+					steps { uiVeri5ExecuteTests script: this, testOptions: "./uiveri5/conf.js" }
 				}
 			}
 	}
