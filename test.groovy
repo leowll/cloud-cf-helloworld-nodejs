@@ -6,10 +6,10 @@ pipeline {
 		stage('Local Tests') {
             parallel {
 				stage("Static Code Checks") {
-					echo 'Static code checks' 
+					steps { echo 'Static code checks' }
 				}
 				stage("UIVERI5 test") {
-					echo 'uiver5 test' 
+					steps { uiVeri5ExecuteTests script: this, testOptions: "./uiveri5/conf.js" }
 				}
 			}
 		}
