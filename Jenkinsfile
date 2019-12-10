@@ -8,14 +8,7 @@ node() {
         mtaBuild script: this
     }
 	stage('test') {
-        parallel {
-            stage("Static Code Checks") {
-		        echo 'Static code checks' 
-            }
-		    stage("UIVERI5 test") {
-				echo 'uiver5 test' 
-            }
-        }
+        load './test.groovy'
     }
     stage('deploy') {
         cloudFoundryDeploy script: this
