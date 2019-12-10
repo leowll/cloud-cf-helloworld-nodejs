@@ -8,7 +8,7 @@ node() {
         mtaBuild script: this
     }
 	stage('test') {
-        load './test.groovy'
+        load './pipeline/test.groovy'
     }
     stage('deploy') {
         cloudFoundryDeploy script: this
